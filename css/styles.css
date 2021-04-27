@@ -1,0 +1,12 @@
+.custom-header{
+  padding: 2rem 1rem;
+  margin: 5px;
+}
+
+#order {
+  display: none;
+}
+
+#receipt {
+  display: none;
+}

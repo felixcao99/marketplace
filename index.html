@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>My Cupcake Store</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>My Cupcake Store</h1>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="custom-header">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://handletheheat.com/wp-content/uploads/2016/08/Pumpkin-Cupcakes-with-Nutella-Frosting-Square-3-550x550.jpg" alt="Pumpkin">
+            <div class="card-body">
+              <h5 class="card-title">Pumpkin</h5>
+              <p class="card-text">Our delicious Pumpkin cupcake.</p>
+              <span class="ordbtn" id="pumpkin"><button class="btn btn-primary">Order</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="custom-header">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://handletheheat.com/wp-content/uploads/2016/02/best-chocolate-cupcakes-recipe-SQUARE-550x550.jpg" alt="Chocolate">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate</h5>
+              <p class="card-text">Our delicious Chocolate cupcake.</p>
+              <span class="ordbtn" id="chocolate"><button class="btn btn-primary">Order</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="custom-header">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://handletheheat.com/wp-content/uploads/2019/03/lemon-cupcakes-SQUARE-550x550.jpg" alt="Lemon">
+            <div class="card-body">
+              <h5 class="card-title">Lemon</h5>
+              <p class="card-text">Our delicious Lemon cupcake.</p>
+              <span class="ordbtn" id="lemon"><button class="btn btn-primary">Order</button></span>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div id="order">
+      <form id="checkout">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="addr">Address:</label>
+          <input id="addr" class="form-control" type="text">
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Checkout</button>
+
+      </form>
+    </div>
+
+    <div id="receipt">
+      <p>Dear <span class="name"></span>,</p>
+      <p>Thank you for order our delicious <span class="cake"></span> cupcake. We will deliver it to <span class="address"></span>. Enjoy!</p>
+    </div>
+  </div>
+  </body>
+</html>
